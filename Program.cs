@@ -4,7 +4,7 @@
  * 
  * NOTE 1 - REVERSING ORDER OF WORDS AND NUMBERS USING CONSOLE.WRITELINE($"... {VARIABLE 1}.") (STRING INTERPOLATION).
  * NOTE 2 - FUNCTION - SUM NUMBERS WHERE SUM FUNCTION IS CALLED OUT SEPARATELY.
- * NOTE 3 - CASE/BREAK/DEFAULT.
+ * NOTE 3 - SWITCH - CASE/BREAK/DEFAULT.
  * NOTE 4 - PRESENTING DATA TO USER IN THREE DIFFERENT WAYS, INCLUDING STRING INTERPOLATION.
  * NOTE 5 - MATHEMATICS - NB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! unfinished with explanations
  * NOTE 6 - TERNARY OPERATOR - NUMBERS AND WORDS - ONLY WORKS IF OUTCOME IS ONLY TRUE AND FALSE.
@@ -17,19 +17,51 @@
  * NOTE 13 - ARRAY
  * NOTE 14 - RETURN VALUE OF FUNCTION
  * NOTE 15 - SPLIT(), INDEXOF, TRIM(), SUBSTRING
+ * NOTE 16 - FUNCTION - CHECK IF INPUT OF THE STRING IS FULLY NUMERICAL
  */
 
 using System;
+using static System.Console;
 
 namespace Notes
 {
     class Program
     {
+        //NOTE 171
+
+        static void Main()
+        {
+
+        }
+
+        //NOTE 16
+
+        /*public static string CheckIfNumericalInput(string userInput) //checking if input is fully number and printing error
+        {
+            bool valid = false;
+            while (valid == false)
+            {
+                if (int.TryParse(userInput, out int number))
+                {
+                    WriteLine($"You have entered {number} which is a number. Please, insert items, not numbers.");
+                    WriteLine("\n");
+                    WriteLine("Insert your items again.");
+                    userInput = ReadLine();
+                }
+
+                else
+                {
+                    valid = true;
+                }
+            }
+            return userInput;
+        }*/
+
         //NOTE 15
 
         /*static void Main()
         {
-            string fullName = "Bogdan*Parubok**";
+            string fullName = "Biggus*Dickus**";
             Console.WriteLine($"Full name ammount of characters before trim: {fullName.Length}");
             Console.WriteLine($"How it looks before trim: {fullName}");
             Console.WriteLine("\n");
