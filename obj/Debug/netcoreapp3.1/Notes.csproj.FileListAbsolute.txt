@@ -1,0 +1,11 @@
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.exe
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.deps.json
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.runtimeconfig.json
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.runtimeconfig.dev.json
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.dll
+C:\Users\Kebo\Desktop\Kool\Notes\bin\Debug\netcoreapp3.1\Notes.pdb
+C:\Users\Kebo\Desktop\Kool\Notes\obj\Debug\netcoreapp3.1\Notes.csprojAssemblyReference.cache
+C:\Users\Kebo\Desktop\Kool\Notes\obj\Debug\netcoreapp3.1\Notes.AssemblyInfoInputs.cache
+C:\Users\Kebo\Desktop\Kool\Notes\obj\Debug\netcoreapp3.1\Notes.AssemblyInfo.cs
+C:\Users\Kebo\Desktop\Kool\Notes\obj\Debug\netcoreapp3.1\Notes.dll
+C:\Users\Kebo\Desktop\Kool\Notes\obj\Debug\netcoreapp3.1\Notes.pdb

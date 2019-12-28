@@ -18,6 +18,7 @@
  * NOTE 14 - RETURN VALUE OF FUNCTION
  * NOTE 15 - SPLIT(), INDEXOF, TRIM(), SUBSTRING
  * NOTE 16 - FUNCTION - CHECK IF INPUT OF THE STRING IS FULLY NUMERICAL
+ * NOTE 17 -
  */
 
 using System;
@@ -27,7 +28,7 @@ namespace Notes
 {
     class Program
     {
-        //NOTE 171
+        //NOTE 17
 
         static void Main()
         {
@@ -48,7 +49,6 @@ namespace Notes
                     WriteLine("Insert your items again.");
                     userInput = ReadLine();
                 }
-
                 else
                 {
                     valid = true;
@@ -112,14 +112,11 @@ namespace Notes
         {
             Console.WriteLine("Insert your name and age separated by comma.");
             string userInput = Console.ReadLine();
-
             PersonalDataBlank(userInput);
         }
-
         public static void PersonalDataBlank(string userInput)
         {
             string[] personalData = userInput.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
             Console.WriteLine("\n");
             Console.WriteLine("The blank of user personal data:");
             Console.WriteLine(personalData[0]);
@@ -132,9 +129,7 @@ namespace Notes
             // first [] shows that int variable will be initalized as array, second [] shows how big array will be, {defined variables in array}
             // remove {} to make array empty
             int[] arrayName = new int[5] { 1, 2, 3, 4, 5 };
-
             Console.WriteLine(arrayName); //just shows how big in bits the array is and its type
-
             //manualy showing each indexed variable in array if there is any variable in array
             Console.WriteLine(arrayName[0]);
             Console.WriteLine(arrayName[1]);
@@ -142,7 +137,6 @@ namespace Notes
             Console.WriteLine(arrayName[3]);
             Console.WriteLine(arrayName[4]);
             Console.WriteLine("\n");
-
             // automatically adding variables to array, i is incremented and written to array with for loop as much as the array lenght is
             // array lenght is defined by the second [] in the called array
             for (int i = 0; i < arrayName.Length; i++)
@@ -150,7 +144,6 @@ namespace Notes
                 Console.WriteLine(arrayName[i]);
             }
             Console.WriteLine("\n");
-
             //reversed array
             //for loop looks at array indexes, not how much it is exactly written in array. Index starts from zero, hence why it is used -1.
             for (int i = arrayName.Length - 1; i >= 0; i--)
@@ -159,11 +152,9 @@ namespace Notes
                 Console.WriteLine(arrayName[i]);
             }
             Console.WriteLine("\n");
-
             //overwriting array values
             //myFirstarray[4] = myFirstarray[4] * 100;
             //myFirstarray[0] = 100;
-
             for (int i = 0; i < arrayName.Length; i++)
             {
                 Console.WriteLine(arrayName[i] * 100); // non-destructive array value change since writeline just shows how variables would be changed
@@ -196,7 +187,6 @@ namespace Notes
             string name;
             Console.WriteLine("insert word");
             name = Console.ReadLine();
-
             foreach (char letter in name)
             {
                 Console.Write($"{letter} ");
@@ -211,7 +201,6 @@ namespace Notes
             int count = 0;
             Console.WriteLine("insert word");
             word = Console.ReadLine();
-
             foreach (char letter in word)
             {
                 if (letter == 'a')
@@ -229,7 +218,6 @@ namespace Notes
             Console.WriteLine("Insert word");
             string name = Console.ReadLine();
             int counter = 0;
-
             foreach (char letter in name)
             {
                 counter++;
@@ -242,7 +230,6 @@ namespace Notes
         /*public static void Main()
         {
             int count = 0;
-
             for (int i = 1; i <= 100; i++) //i = 1 is the from where the loop starts, i <= 100 is when the loop ends, i++ dictates how long the loop goes until it hits i <= 100
             {
                 if (i % 3 == 0) //i in the for loop statement is divided by 3
@@ -266,7 +253,6 @@ namespace Notes
             int nr2 = int.Parse(Console.ReadLine());
             Sum(nr1, nr2);
         }
-
         public static void Sum(int name, int color)
         {
             Console.WriteLine(name + color);
@@ -276,7 +262,6 @@ namespace Notes
         {
             Console.WriteLine($"{Sum()}");
         }
-
         public static int Sum()
         {
             Console.WriteLine("Insert number 1.");
@@ -295,7 +280,6 @@ namespace Notes
             int nr2 = int.Parse(Console.ReadLine());
             Console.WriteLine(Sum(nr1, nr2));
         }
-
         public static int Sum(int nr1, int nr2)
         {
             int c = nr1 + nr2;
@@ -311,7 +295,6 @@ namespace Notes
             Sum(nr1, nr2);
             Console.WriteLine($"{nr1 + nr2}");
         }
-
         public static int Sum(int nr1, int nr2)
         {
             int c = nr1 + nr2;
@@ -323,7 +306,6 @@ namespace Notes
         /*static void Main()
         {
             //Outside of "while"it generates number only once. Put inside "while" and you get unlimited random numbers as long as "while" is running.
-
             Random rndGen = new Random();
             int rndNum = rndGen.Next(1, 7);
             Console.WriteLine($"{rndNum}");
@@ -443,7 +425,6 @@ namespace Notes
             int sum1 = nr1 + nr2;
             return sum1;
         }
-
         static void Main()
         {
             Console.WriteLine("Enter number one:");
@@ -458,7 +439,6 @@ namespace Notes
         /*
         static void Main()
         {
-
             string wor1, wor2, temp1;
             wor1 = Console.ReadLine();
             wor2 = Console.ReadLine();
